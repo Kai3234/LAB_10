@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         textViewQuote = findViewById(R.id.textViewQuote);
-        textViewAuthor = findViewById(R.id.textViewAuthor);
-        button = findViewById(R.id.button);
+        //textViewAuthor = findViewById(R.id.textViewAuthor);
+        //button = findViewById(R.id.button);
 
         ApiThread apiThread = new ApiThread(this);
         apiThread.start();
-        button.setOnClickListener(v -> {
-            ApiThread thread = new ApiThread(this);
-            thread.start();
-        });
+//        button.setOnClickListener(v -> {
+//            ApiThread thread = new ApiThread(this);
+//            thread.start();
+//        });
     }
 }

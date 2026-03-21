@@ -49,12 +49,12 @@ public class ApiThread extends Thread {
             JSONObject quoteObject = new JSONObject(response.toString());
 
             String quote = quoteObject.getString("quote");
-            String author = quoteObject.getString("author");
+            //String author = quoteObject.getString("author");
 
 
             activity.runOnUiThread(() -> {
                 activity.textViewQuote.setText(quote);
-                activity.textViewAuthor.setText(author);
+                //activity.textViewAuthor.setText(author);
             });
 
         } catch (Exception e){
