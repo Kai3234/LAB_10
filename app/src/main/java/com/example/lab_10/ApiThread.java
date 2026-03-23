@@ -1,6 +1,5 @@
 package com.example.lab_10;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;

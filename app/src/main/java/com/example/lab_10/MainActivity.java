@@ -39,4 +39,11 @@ public class MainActivity extends AppCompatActivity {
 //            thread.start();
 //        });
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        ApiThread thread = new ApiThread(this);
+        thread.start();
+    }
 }
